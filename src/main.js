@@ -1,6 +1,6 @@
 import "./style.css";
 
-const photoModules = import.meta.glob("./assets/photos/*.{png,jpg,jpeg,webp,gif}", {
+const photoModules = import.meta.glob("./assets/photos/*.{png,jpg,jpeg,webp,gif,PNG,JPG,JPEG,WEBP}", {
   eager: true,
   import: "default",
 });
