@@ -1,9 +1,10 @@
 import "./style.css";
 
-const photoModules = import.meta.glob("./assets/photos/*.{png,jpg,jpeg,webp,gif,PNG,JPG,JPEG,WEBP}", {
-  eager: true,
-  import: "default",
-});
+const photoModules = import.meta.glob(
+  "./assets/photos/*.{png,jpg,jpeg,webp,gif,PNG,JPG,JPEG,WEBP,GIF}",
+  { eager: true, import: "default" }
+);
+
 const PHOTOS = Object.values(photoModules);
 
 // 2) Dźwięk (wrzuć plik do public/sounds/holy-moly.mp3)
